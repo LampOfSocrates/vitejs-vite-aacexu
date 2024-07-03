@@ -1,0 +1,82 @@
+/* App.css */
+:root {
+  --ag-row-height: 25px; /* Define the row height variable */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 182, 193, 1) 0%,
+    rgba(255, 182, 193, 0.6) 60%,
+    rgba(255, 182, 193, 0) 100%
+  );
+}
+
+.panel {
+  margin-bottom: 10px; /* Reduced gap between panels */
+}
+
+.panel h2 {
+  margin-bottom: 5px; /* Reduced bottom margin for headers */
+  font-size: 1.5em;
+}
+
+.search-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+.main-grid,
+.position-totals-grid,
+.price-chart {
+  margin-top: 10px; /* Reduced gap above grids */
+}
+
+.ag-theme-alpine.compact-grid .ag-cell,
+.ag-theme-alpine.compact-grid .ag-header-cell {
+  padding: 2px 5px;
+  font-size: 12px;
+  line-height: 1.2;
+  border-right: 1px solid #ddd; /* Add right border to cells and headers */
+}
+
+.ag-theme-alpine.compact-grid .ag-header-cell {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd; /* Add bottom border to header */
+}
+
+.ag-theme-alpine.compact-grid .ag-row {
+  height: var(--ag-row-height); /* Set height using CSS variable */
+}
+
+.ag-theme-alpine.compact-grid .ag-header {
+  height: auto; /* Set height to auto to fit contents */
+}
+
+.ag-theme-alpine.compact-grid .ag-root-wrapper-body {
+  overflow: auto; /* Enable horizontal and vertical scrollbars */
+}
